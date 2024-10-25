@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/afLogin.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="page1">
+        <div class="navbar">
+                <div class="logo"></div>
+                <div class="nav-opts">
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                    <div class="profile">
+                        <h3 style="color:white">Hey <p style="display: inline; background-color: transparent; text-transform: capitalize;"><%=user.name%></p></h3>
+                        <div class="profile-photo"></div>
+                    </div>
+                </div>
+        </div>
+        <div class="content">
+            <h1 style="color: white; font-size: 40px; font-weight: 400;margin-top: 40px;">Your Courses</h1>
+            <div class="courses">
+                <div class="card">
+                    <h2 style="margin-top: 20px; color: white; ">Course Heading</h2>
+                    <p style="margin-bottom: 10px;">This course is the best course for you, where you get hands on learning.</p>
+                    <button onclick="window.location.href='/lectures'" class="enroll">Start Learning</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h1 style="color: white; font-size: 40px; font-weight: 400;margin-top: 40px;">Explore More</h1>
+            <div class="courses">
+                <div class="card">
+                    <h2 style="margin-top: 20px; color: white; ">Course Heading</h2>
+                    <p style="margin-bottom: 10px;">This course is the best course for you, where you get hands on learning.</p>
+                    <button class="enroll">Unlock Now!</button>
+                </div>
+                <div class="card">
+                    <h2 style="margin-top: 20px; margin-bottom: 20px; color: white; ">Course Heading</h2>
+                    <p style="margin-bottom: 10px;">This course is the best course for you, where you get hands on learning.</p>
+                    <button class="enroll">Unlock Now!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/javascripts/afLogin.js"></script>
+</body>
+</html>

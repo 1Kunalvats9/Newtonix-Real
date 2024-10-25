@@ -1,0 +1,152 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    padding-right:10px;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.navbar{
+    /* width: 100%;
+    height: 7%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 15px; */
+    width: 95%;
+    height: 7%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: a subtle white border */
+    color: #fff; /* Text color */
+    border-radius: 25px;
+}
+.logo{
+    width: 250px;
+    height: 100%;
+    background-image: url(/assets/logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.navbar .nav-opts a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    margin-right: 10px;
+    background-color: transparent;
+}
+.navbar .nav-opts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+.profile h3{
+    cursor: pointer;
+    background-color: transparent;
+}
+.profile .profile-photo{
+    height: 45px;
+    width: 40px;
+    border-radius: 50%;
+    border:1px solid rgb(165, 160, 160);
+    background-image: url(/assets/user-photo.png);
+    background-size: cover;
+    background-position:top;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid rgb(85, 83, 83);
+    width: 90%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.courses{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 50%;
+    padding: 20px;
+}
+.card{
+    /* border: 1px solid white;
+    border-radius: 10px;
+    width: 30%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(20px); */
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(120deg, rgb(36, 35, 35),black); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: a subtle white border */
+    color: #fff; /* Text color */
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+.card h2{
+    background-color: transparent;
+}
+.card p{
+    margin-top: 20px;
+    background-color: transparent;
+}
+.enroll{
+    color: rgb(32, 31, 31);
+    border: none;
+    background: radial-gradient(circle , rgb(87, 187, 240),rgb(11, 110, 163));
+    text-align: center;
+    padding: 9px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.15s ease-in-out;
+
+}
+.enroll:hover{
+    transform: scale(1.15);
+    transition: 0.2s ease-in-out;
+}

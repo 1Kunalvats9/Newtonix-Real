@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=device-width">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="signup-cong">
+        <h2 style="font-size: 40px;">New User Account Created!</h2>
+        <p style="font-size: 50px; text-align: center;">✅</p>
+    </div>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="/create" method="post">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i> </a>
+                    <a href="www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="www.github.com" class="icon"><i class="fa-brands fa-github "></i> </a>
+                    <a href="www.linkein.com" class="icon"><i class="fa-brands fa-linkedin-in"></i> </a>
+                </div>
+                <span>Or use your email for registeration</span>
+                <form action="/create" method="post">
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="password" placeholder="Password" name="password">
+                    <input style="background-color: #4072f3; color:white; padding:10px 45px; border: 1px solid transparent; border-radius: 8px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-top: 10px; cursor: pointer;" type="submit" value="Create User">
+                </form>
+                
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form action="/profile" method="post">
+                <h1>Log In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i> </a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github "></i> </a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i> </a>
+                </div>
+                <span>Or use your email password  </span>
+                <form action="/profile" method="post">
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="password" placeholder="Password" name="password">
+                    <a href="#">Forget your password? </a>
+                    <input style="background-color: #4072f3; color:white; padding:10px 45px; border: 1px solid transparent; border-radius: 8px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-top: 10px; cursor: pointer;" type="submit" value="Log In">
+                </form>
+                
+            </form>
+        </div>  
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features.</p>
+                    <button class="hidden" id="login">Sign In </button>
+                </div> 
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello Learner</h1>
+                    <p>Register with your personal details to use all of site features.</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/javascripts/script.js"></script>
+</html>
